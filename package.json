@@ -1,0 +1,29 @@
+{
+  "name": "gemini-desktop",
+  "version": "1.0.0",
+  "description": "Gemini desktop app for Windows",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.gemini.desktop",
+    "productName": "Gemini",
+    "win": {
+      "target": "nsis",
+      "icon": "google-gemini-icon.png"
+    }
+  },
+  "keywords": [
+    "gemini",
+    "electron",
+    "desktop"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^38.4.0",
+    "electron-builder": "^24.9.1"
+  }
+}
