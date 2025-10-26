@@ -23,6 +23,9 @@ This application transforms the Google Gemini web interface into a native Window
 - Windows 10 or newer
 
 ### Installation
+Download the zip from the RELEASES https://github.com/KYPatrik/gemini-windows/releases/tag/Gemini
+
+OR
 
 1. Clone or download this repository
 2. Install dependencies:
