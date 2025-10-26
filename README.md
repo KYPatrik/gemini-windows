@@ -54,6 +54,39 @@ This application is safe to use with your Google account because:
 - No intermediate code intercepts your data
 - Employs security best practices (`contextIsolation`, `nodeIntegration: false`)
 
+### ⚠️ Important: Antivirus & Browser Warnings
+
+**You may see security warnings when downloading or running this application. This is NORMAL and expected.**
+
+#### Why does this happen?
+- **Unsigned Application**: The .exe is not digitally signed with an expensive code signing certificate ($200-400/year)
+- **Windows SmartScreen**: Warns about applications from unknown publishers
+- **Browser Protection**: Chrome/Edge may flag the download as potentially unsafe
+- **False Positive**: Antivirus software sometimes misidentifies Electron apps
+
+#### Is it actually safe?
+**YES!** This is open-source software. You can:
+1. Review all the code in this repository
+2. Build the application yourself using `npm run build`
+3. See that it only loads the official Gemini website with no modifications
+
+#### How to bypass the warnings:
+
+**Windows SmartScreen:**
+1. Click "More info" when you see the warning
+2. Click "Run anyway"
+
+**Browser Download Warning:**
+1. Click the download warning
+2. Select "Keep" or "Download anyway"
+
+**Windows Defender:**
+1. Allow the file in Windows Security
+2. Add to exclusions if needed
+
+#### Alternative: Portable Version
+If you're uncomfortable with the installer, extract and use the files from the `dist/win-unpacked` folder directly. No installation required!
+
 ## 📦 Built With
 
 - [Electron](https://www.electronjs.org/) - Framework for building native applications with web technologies
